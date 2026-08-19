@@ -1,4 +1,4 @@
-package com.apitest.demo.dtos;
+package com.apitest.demo.dtos.salida;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

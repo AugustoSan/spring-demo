@@ -1,6 +1,6 @@
 package com.apitest.demo.utils;
 
-import com.apitest.demo.dtos.EstablecimientoDto;
+import com.apitest.demo.dtos.salida.EstablecimientoDto;
 import com.apitest.demo.models.EstablishmentModel;
 
 public class Mapping {

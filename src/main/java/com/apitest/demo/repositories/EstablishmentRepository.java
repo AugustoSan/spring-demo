@@ -36,4 +36,28 @@ public class EstablishmentRepository {
         return establishments;
     }
 
+    /**
+     * Agrega un nuevo establecimiento
+     * @param establishment el establecimiento a agregar
+     */
+    public EstablishmentModel save(EstablishmentModel establishment) {
+        mongoTemplate.save(establishment);
+        return establishment;
+    }
+    
+    /**
+     * Actualiza un establecimiento existente
+     * @param establishment el establecimiento a actualizar
+     */
+    public void update(EstablishmentModel establishment) {
+        mongoTemplate.save(establishment);
+    }
+
+    /**
+     * Elimina un establecimiento
+     * @param establishment el establecimiento a eliminar
+     */
+    public void delete(EstablishmentModel establishment) {
+        mongoTemplate.remove(establishment);
+    }
 }
